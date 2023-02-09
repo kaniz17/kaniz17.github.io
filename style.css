@@ -1,0 +1,209 @@
+nav {
+  display: flex;
+  border-top: 2px solid purple;
+  border-bottom: 1px solid rgb(196, 192, 192);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+
+  
+  
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  font-size: x-large;
+  
+  
+ 
+}
+li {
+  display: inline;
+  background-color: white;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid white;
+  color: black;
+  flex: 1;
+  
+  
+  
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+img {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden
+  
+  
+}
+#container {
+display: flex;
+
+}
+#container div {
+border: 2px solid grey;
+height: 420px;
+border-left-color: white;
+border-right-color: white;
+border-bottom-color: white;
+border-top-color: white;
+
+
+}
+.first {
+ flex-basis: 30%; 
+ flex-grow: 0;
+ flex-shrink: 1;
+ 
+ padding:0;
+ margin: 0;
+
+
+ 
+
+}
+
+
+.second {
+flex-basis: 70%; 
+ flex-grow: 0;
+ flex-shrink: 1;
+ padding-left: 15px;
+}
+
+.vertical-line { 
+  width: 1px; 
+  height: 400px;
+  background-color: rgb(239, 232, 232); 
+} 
+
+
+.footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: white;
+color: black;
+text-align: center;
+background-image: linear-gradient(white, rgb(202, 193, 193));
+border: 1px solid  rgb(202, 193, 193);
+
+
+}
+.row {
+  
+display: flex;
+flex-flow: column wrap;
+justify-content: first baseline;
+list-style: none;
+
+  
+  
+}
+.list {
+  margin: 0;
+  padding: 1px;
+  font-size: 28px;
+  opacity: 70%;
+}
+
+.unique{
+  margin: 0;
+  padding: 2.5px;
+  text-align: center;
+}
+
+
+ progress {
+  width: 80%;
+  height: 30px;
+}
+.progress-bar{
+  flex-basis: 70%; 
+ flex-grow: 0;
+ flex-shrink: 1;
+ padding-left: 15px;
+ margin-bottom: 5px;
+}
+
+.space {
+  margin: 0;
+  padding: 0;
+  
+}
+
+@media only screen and (max-width: 768px) {
+  #container {  
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    font-size: smaller;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+  }
+ 
+  li{
+    padding: 5px;
+    
+  }
+  
+
+ 
+  .first {
+    size-adjust: auto;  
+    width: 90%;
+    height: 30%;
+         
+    text-align: center;
+  }
+  .second {
+    width: 100%;
+    height: 7%;    
+    padding-bottom: 80px;
+    text-align: center;
+    
+    }
+    .progress-bar{
+      width: 100%;
+    height: 7%;    
+    padding-bottom: 80px;
+    text-align: center;
+
+    }
+  
+  .vertical-line {
+    display: none;
+  }
+  
+  .footer{
+      height: 7%;
+  }
+  table tr  {
+    width: 100%;
+    text-align: left;
+  }
+  
+}
+  
+ 
+
+
+
+
+
